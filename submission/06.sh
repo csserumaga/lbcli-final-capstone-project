@@ -3,3 +3,4 @@ blockHash=$(bitcoin-cli -signet getblockhash 243821)
 
 rbfTx=$(bitcoin-cli -signet getblock "$blockHash" 2 | jq -r '.tx[] | select(any(.vin[]; .txid != null and .sequence < 4294967294)) | .txid')
 
+echo "$rbfTx"
