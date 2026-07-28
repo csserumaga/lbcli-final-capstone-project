@@ -1,6 +1,6 @@
 # How many new outputs were created by block 243,825?
 blockhash=$(bitcoin-cli -signet getblockhash 243825)
 
-inputs=$(bitcoin-cli -signet getblock "$blockhash" 2 | jq '[.tx[].vin[]] | length')
+inputs=$(bitcoin-cli -signet getblock "$blockhash" 2 | jq '[.tx[].vin[] | select(.txid != null)] | length')
 
 echo "$inputs"
