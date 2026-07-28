@@ -1,0 +1,1 @@
+wpkh([04bc014e/84h/1h/0h]tpubDDLFzbdASshwgwSWgnLJJeWdggHLL2SCfLbnvjJyHE9VBtp15cKu55E9E2qjNLtu83LSDgEbzCd9hkrmivHdWhPDH1cb891oPLb6JYxwDdu/0/*)#nmpqx3hd
